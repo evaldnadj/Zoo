@@ -14,7 +14,7 @@ export class AnimallistComponent implements OnInit {
      {
       name: "Mara",
       spices: "snake",
-      date_of_birth: "2017-12-12"
+      date_of_birth: ""
      },
      {
       name: "Miki",
@@ -39,8 +39,9 @@ export class AnimallistComponent implements OnInit {
       date_of_birth: "2011-05-12"
      }
     ]
+
   }
   ngOnInit() {
   }
-
+  
 }

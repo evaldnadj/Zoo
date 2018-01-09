@@ -9,7 +9,8 @@
   <tr *ngFor="let animal of animals">
     <td>{{ animal.name }}</td>
     <td>{{ animal.spices }}</td>
-    <td>{{ animal.date_of_birth }}</td>
+    <td *ngIf="!animal.date_of_birth"> unknown </td>
+    <td *ngIf="animal.date_of_birth">{{ animal.date_of_birth }}</td>
     <td>
         <button
             class="btn btn-danger"
