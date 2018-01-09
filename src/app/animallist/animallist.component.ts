@@ -9,8 +9,10 @@ export class AnimallistComponent implements OnInit {
   
   animals: Array<Object>;
 
-  constructor() { 
-    this.animals = [
+  constructor() 
+  { 
+    this.animals = 
+    [
      {
       name: "Mara",
       spices: "snake",
@@ -43,5 +45,10 @@ export class AnimallistComponent implements OnInit {
   }
   ngOnInit() {
   }
-  
+  removeAnimal(animal) 
+  {
+    let index = this.animals.indexOf(animal);
+    this.animals.splice(index, 1);
+  }
+
 }
