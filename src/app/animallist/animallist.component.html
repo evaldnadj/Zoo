@@ -1,0 +1,21 @@
+<table class="table table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Spices</th>
+      <th>Date of birth</th>
+    </tr>
+  </thead>
+  <tr *ngFor="let animal of animals">
+    <td>{{ animal.name }}</td>
+    <td>{{ animal.spices }}</td>
+    <td>{{ animal.date_of_birth }}</td>
+    <td>
+        <button
+            class="btn btn-danger"
+            (click)="removeAnimallistComponent(animal)">
+          X
+        </button>
+    </td>
+  </tr>
+</table>
